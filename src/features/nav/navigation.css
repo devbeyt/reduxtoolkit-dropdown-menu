@@ -1,0 +1,57 @@
+
+.nav
+{
+  width: 100%;
+  border-bottom: 0.5px solid black;
+}
+
+.nav > ul{
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+
+}
+
+li{
+  list-style: none;
+  padding: 20px;
+}
+
+li:hover{
+  background-color: deeppink;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  width: 145px;
+}
+
+li:hover .subMenu {
+    display: block;
+}
+
+.subMenu{
+   display: none;
+}
+
+.subMenu{
+  position: absolute;
+  margin-top: 5px;
+  margin-left: -20px;
+  width: 185px;
+  height: auto;
+  background-color: deeppink;
+  text-align: center;
+}
+
+.subMenu > a{
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  color: white;
+}
+
+.subMenu > a:hover{
+  background-color: blueviolet;
+}
